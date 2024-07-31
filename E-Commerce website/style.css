@@ -1030,8 +1030,8 @@ footer .copyright {
     .section-p1 {
         padding: 40px 40px;
     }
-    #navbar {
-        display: flex;
+    #navbar { /*This css style is for the nav bar which slides when the page is on 799px screen width*/
+        display: flex ;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
@@ -1043,7 +1043,7 @@ footer .copyright {
         width: 300px;
         background-color: #E3E6F3;
         box-shadow: 0 40px 60px rgba(0,0,0,0.1);
-        padding: 80px 0 0 10px;
+        padding: 80px 0 0 20px;
         transition: 0.3s;
     }
 

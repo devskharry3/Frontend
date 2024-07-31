@@ -1,5 +1,3 @@
-
-
 const quizData = [
     {
         question: 'How old are you',
@@ -16,7 +14,7 @@ const quizData = [
         d: 'Javascript',
         correct:'d'
     }, {
-        question: 'who is the president of US?',
+        question: 'who is the former president of US?',
         a: 'Florin Pop',
         b: 'Donald Trump',
         c: 'Ivan Saldano',
@@ -43,6 +41,13 @@ const quizData = [
         c: 'United States',
         d: 'Angola',
         correct: 'a'
+    }, {
+        question: 'who is the prince of afro beat?',
+        a: 'Crayon',
+        b: 'Rema',
+        c: 'Dprince',
+        d: 'Burna',
+        correct: 'b'
     }
 ]
 
@@ -65,8 +70,8 @@ function loadQuiz(){
     deselectAnswers();
     const currentQuizData = quizData[currentQuiz];
 
-    questionElement.innerText = currentQuizData.question;
-    a_text.innerText = currentQuizData.a
+    questionElement.innerText = currentQuizData.question; //This make sure each questions get to dsiplay
+    a_text.innerText = currentQuizData.a //This section of the codes ensures each answer get to display
     b_text.innerText = currentQuizData.b
     c_text.innerText = currentQuizData.c
     d_text.innerText = currentQuizData.d
@@ -90,7 +95,7 @@ function getSelected(){
     return answer; 
 }
 
-function deselectAnswers() {
+function deselectAnswers() { /*This is the func to make sure the radio button does not select itself automatically*/
     answerElement.forEach((answerElement) => {
         answerElement.checked = false;
         });
@@ -118,7 +123,7 @@ submitBtn.addEventListener('click' , () => {
         quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2> 
         <button onclick= "location.reload()">Reload</button>`;
     }
-
+ 
 
 }
 });

@@ -13,13 +13,13 @@ body {
     justify-content: center;
     font-family: "Poppins", sans-serif;
     margin: 0;
-    min-height: 100vh;
+    min-height: 100vh;   
 
 }
 
-.quiz-container{
-    background-color: #fff;
-    border-radius: 10px;
+.quiz-container{  /*This make sure the container maintain a good order*/
+    background-color: #ac6a6a;
+    border-radius: 10px; 
     box-shadow:0 0 10px 5px rgba(0,0,0,0.1);
     width: 600px;
     max-width: 100%;
@@ -30,7 +30,7 @@ body {
 }
 
 h2{
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     margin: 0;
 }
@@ -51,7 +51,7 @@ ul li label {
 }
 
 button{
-    background-color: #8e44ad;
+    background-color: #8f172b;
     display: block;
     border: none;
     color: #fff;

@@ -1,0 +1,112 @@
+/*import url{"https://fonts.googleapis.com/css? family-OpenSans:400,500 display=swap"};*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0  2px 5px rgba(0,0,0,0.3);
+    width: 400px;
+    max-width: 100%;
+}
+
+.header{
+    background-color: #f7f7f7;
+    border-radius: 1px solid #f0f0f0;
+    padding: 20px 40px;
+}
+.header h2{
+    margin: 0;
+}
+.form{
+    padding: 30px 40px ;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 30px; /*i increased this from 20 t0 30  becuase the validation for regex sentence is so long long that it was over floating in the input box added more padding bottom makes it stay in a good place under the input box */
+    position: relative;
+}
+
+
+.form-control label{ /*This is for the title of each input */
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    display: block; /*This gave all the input block look arrange on top eavh other*/
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+
+
+}
+.form-control i{  /*This is to ensure the icon are in the left corner of the form control box */
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden; /*This is to hide the icons*/
+}
+
+.form-control.success i.bxs-check-circle{  /*This was added after to give the icons color and make them visible 96-101 was written beofre this */
+    color: #2ecc71;
+    visibility: visible;
+
+}
+
+.form-control.error i.bxs-alarm-exclamation{ /*This made the exclamation icon for email to appear*/
+    color: #e74c3c;
+    visibility: visible;
+} 
+
+
+
+.form-control small{
+    visibility: hidden; /*The styles here made the error messages to disappear*/
+    position: absolute; 
+    bottom: 0; /*-15*/
+    left: 0;
+}
+
+.form-control.error small{ /*This actually made the error message to appear under the input*/
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form button{
+    background-color: rgb(126, 32, 126);
+    border: 2px solid rgb(126, 32, 126);
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inehrit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%; /* This makes the submit button to be long */
+
+}
+
+.form-control.success input{ /*This actually gave the input border username it collor green*/
+    border-color: #2ecc71;
+}
+
+.form-control.error input { /*This actually gave the input border email it color red*/
+    border-color: #e74c3c;
+}
+#savedDetails{
+    padding: 20px;
+}

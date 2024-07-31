@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create  Account</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control"> <!---Sucess class beside form control was removed thats after javscipt line 38----->
+                <label>Username</label>
+                <input type="text"
+                placeholder="BigSk"   id="username">
+                <i class='bx bxs-check-circle'></i>
+                <i class='bx bxs-alarm-exclamation'></i>
+                <small>Error Message</small>
+                </div>
+
+                <div class="form-control"> <!--error class was removed too----->
+                    <label>Email</label>
+                    <input type="email"
+                    placeholder="Enter your email"   id="email">
+                    <i class='bx bxs-check-circle'></i>
+                    <i class='bx bxs-alarm-exclamation'></i>
+                    <small >Error Message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label>Password</label>
+                        <input type="password"
+                        placeholder="Enter your password"   id="password">
+                        <i class='bx bxs-check-circle'></i>
+                        <i class='bx bxs-alarm-exclamation'></i>
+                        <small>Error Message</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label>Password Check</label>
+                            <input type="password"
+                            placeholder="Password two"   id="password2">
+                            <i class='bx bxs-check-circle'></i>
+                            <i class='bx bxs-alarm-exclamation'></i>
+                            <small>Error Message</small>
+                            </div>
+                            <button type="submit" >Submit</button>
+    </form>
+    <div id="savedDetails"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -38,3 +38,20 @@ body{
     border-radius: 3px;
     
 }
+
+.home-container{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    background-color: #2bab0d;
+    margin-top: 30px;
+
+}
+
+.home-container .cont{
+    text-decoration: underline;
+    display: flex;
+    margin-top: 60px;
+    color: aqua;
+}
